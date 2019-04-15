@@ -1,7 +1,6 @@
 {
   "name": "jwtnode",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "NODE_ENV=development node app.js",
@@ -21,5 +20,14 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bohdan2000/JwtIncoraTask.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bohdan2000/JwtIncoraTask/issues"
+  },
+  "homepage": "https://github.com/Bohdan2000/JwtIncoraTask#readme",
+  "description": ""
 }

@@ -148,6 +148,29 @@ router
      *    HTTP/1.1 422 Bad role
      */
     .delete('/:id', middleware.check , userController.deleteUser)
+
+
+        /**
+     * @api {update} http://localhost:8080/users/:id Update User
+     * @apiGroup User
+     * @apiName UpdateUsers
+     * 
+     * @apiParam {id} id User id
+     * 
+     * @apiSuccessExample {json} Success
+     *    HTTP/1.1 200 OK
+     *    {
+     *      massege:"Success"
+     *    }
+     * @apiErrorExample {json} User not found
+     *    HTTP/1.1 404 Not Found
+     * @apiErrorExample {json} Find error
+     *    HTTP/1.1 500 Internal Server Error
+     * @apiErrorExample {json} Bad validation
+     *    HTTP/1.1 422 Bad validation
+     * @apiErrorExample {json} Bad role
+     *    HTTP/1.1 422 Bad role
+     */
     .put('/:id', middleware.check , userController.updateUser)
 
 module.exports = router;
